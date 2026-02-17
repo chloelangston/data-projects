@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  /* Sage Palette */
+  --color-sage-50: #f4f7f5;
+  --color-sage-100: #e3ebe6;
+  --color-sage-200: #c5d9cd;
+  --color-sage-300: #9ebfb0;
+  --color-sage-400: #75a08d;
+  --color-sage-500: #578572;
+  --color-sage-600: #426959;
+  --color-sage-700: #365448;
+  --color-sage-800: #2d423a;
+  --color-sage-900: #263832;
+
+  /* Eucalyptus Palette */
+  --color-eucalyptus-50: #f0fdf9;
+  --color-eucalyptus-100: #ccfbf1;
+  --color-eucalyptus-200: #99f6e4;
+  --color-eucalyptus-300: #5eead4;
+  --color-eucalyptus-400: #2dd4bf;
+  --color-eucalyptus-500: #14b8a6;
+  --color-eucalyptus-600: #0d9488;
+  --color-eucalyptus-700: #0f766e;
+  --color-eucalyptus-800: #115e59;
+  --color-eucalyptus-900: #134e4a;
+}
+
+:root {
+  /* Semantic mapping for usage in code if needed outside utility classes */
+  --background: var(--color-sage-50);
+  --surface: #ffffff;
+  --text-primary: var(--color-sage-900);
+  --text-secondary: var(--color-sage-600);
+  --border-color: var(--color-sage-200);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Check your fonts', 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
