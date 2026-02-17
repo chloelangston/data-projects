@@ -18,7 +18,7 @@ export function CampaignFinance() {
 
     useEffect(() => {
         // Fetch Latest Filings
-        Papa.parse('/data/latest_filings.csv', {
+        Papa.parse(import.meta.env.BASE_URL + 'data/latest_filings.csv', {
             download: true,
             header: true,
             complete: (results) => {
@@ -77,7 +77,7 @@ export function CampaignFinance() {
                         <DonationList
                             title="Latest Filings"
                             donations={latestFilings}
-                            viewAllLink="/data/latest_filings.csv"
+                            viewAllLink={import.meta.env.BASE_URL + 'data/latest_filings.csv'}
                         />
                     </div>
 

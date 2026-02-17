@@ -11,7 +11,7 @@ interface TransitTaxDonation {
     Description: string;
 }
 
-const CSV_URL = '/data/transit_tax_filings.csv';
+const CSV_URL = import.meta.env.BASE_URL + 'data/transit_tax_filings.csv';
 
 export function TransitTaxTable() {
     const [data, setData] = useState<TransitTaxDonation[]>([]);

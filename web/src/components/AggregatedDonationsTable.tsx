@@ -13,7 +13,7 @@ interface ProcessedDonation extends AggregatedDonation {
     amountValue: number;
 }
 
-const SHEET_CSV_URL = '/data/aggregated_large_donations.csv';
+const SHEET_CSV_URL = import.meta.env.BASE_URL + 'data/aggregated_large_donations.csv';
 
 export function AggregatedDonationsTable() {
     const [data, setData] = useState<ProcessedDonation[]>([]);
